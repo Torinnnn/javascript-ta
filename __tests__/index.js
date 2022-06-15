@@ -8,6 +8,32 @@ const { solution } = require("../src");
 //   });
 // });
 
+// function to check if number is a prime number
+ 
+function solution(num){
+  
+ if (num < 1){
+  console.log("This number is not a prime number");
+}
+
+else if (num === 1){
+  console.log("1 is not a prime number");
+}
+
+else if (num > 1) {
+for (var i=2; i<num; i++){
+num % i === 0;
+}
+  console.log("This number is not a prime number");
+}
+
+else {
+  console.log("This is a prime number");
+}
+}
+
+
+
 describe("Test solutions", () => {
   it("Testcase 0", () => {
     const input = 2;
